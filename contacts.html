@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабельные лотки от производителя | Компания Кабельные лотки</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/media.css">
+</head>
+
+<body>
+    <div id="app">
+        <header id="header">
+            <div class="container">
+                <div class="header__top">
+                    <a href="/" class="logo">
+                        <span class="logo__text">Кабельные <span>лотки</span></span>
+                        <span class="header__date">
+                            Производим с 2005 года
+                        </span>
+                    </a>
+                    <ul class="header__nav">
+                        <li><a @click="openPopupCalculator" href="#">Калькулятор</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div @click="openMobileNav" class="header__btn-nav" :class="{active: navMobile}">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="header__grafik">
+                        понедельник-суббота, 08:00 - 19:00
+                    </div>
+                    <div class="header__contacts">
+                        <a href="#" class="header__phone">8 977 583 73 62</a>
+                        <div @click="openPopupCallback" class="header__callback">Заказать звонок</div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <a href="/shop.html" class="btn-max header__btn-catalog">
+                        <img src="/assets/img/icon-shopping-bag.svg" alt="">
+                        Каталог</a>
+                    <ul class="header__nav-catalog">
+                        <li><a href="">Лестничные лотки</a></li>
+                        <li><a href="">Проволочные лотки</a></li>
+                        <li><a href="">Перфорированные лотки</a></li>
+                        <li><a href="">Неперфорированные лотки</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__nav-mobile" :class="{active: navMobile}">
+                <div @click="openMobileNav" class="header__btn-nav" :class="{active: navMobile}">
+                    <span></span><span></span><span></span>
+                </div>
+                <ul class="header__nav">
+                    <li><a @click="openPopupCalculator" href="#">Калькулятор</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class="btn-max header__btn-catalog">
+                    <img src="/assets/img/icon-shopping-bag.svg" alt="">
+                    Каталог</a>
+                <ul class="header__nav-catalog">
+                    <li><a href="">Лестничные лотки</a></li>
+                    <li><a href="">Проволочные лотки</a></li>
+                    <li><a href="">Перфорированные лотки</a></li>
+                    <li><a href="">Неперфорированные лотки</a></li>
+                    <li><a href="">Крышки для лотков</a></li>
+                </ul>
+                <div class="header__contacts">
+                    <a href="#" class="header__phone">8 977 583 73 62</a>
+                    <div @click="openPopupCallback" class="header__callback">Заказать звонок</div>
+                </div>
+                <div class="header__grafik">
+                    понедельник-суббота, 08:00 - 19:00
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <div class="container">
+                <div class="contacts__row">
+                    <div class="contacts__block">
+                        <h1 class="contacts__title">Контакты</h1>
+                        <div class="contacts__sub-title">
+                            Свяжитесь с нами удобным способом
+                        </div>
+                        <div class="contacts__text">
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    <img src="/assets/img/icon-clock.svg" alt="">
+                                </div>
+                                <div class="contacts__line-value">
+                                    понедельник-суббота, 08:00 - 19:00
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    <img src="/assets/img/icon-mail.svg" alt="">
+                                </div>
+                                <div class="contacts__line-value">
+                                    info@kabelnye-lotki.ru
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    <img src="/assets/img/icon-phone.svg" alt="">
+                                </div>
+                                <div class="contacts__line-value">
+                                    8 977 583 73 62
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div @click="openPopupCallback" class="btn-max">Заказать звонок</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__block">
+                        <div class="contacts__title">Реквизиты</div>
+                        <div class="contacts__text">
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    <div class="contacts__line-value">
+                                        Общество с ограниченной ответственностью «Москам»
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    Юридическй адрес:
+                                </div>
+                                <div class="contacts__line-value">
+                                    123456, г. Москва, ул. Подвойского, д. 14, стр. 7
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    ИНН:
+                                </div>
+                                <div class="contacts__line-value">
+                                    547366666
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    ИНН:
+                                </div>
+                                <div class="contacts__line-value">
+                                    547366666
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    ИНН:
+                                </div>
+                                <div class="contacts__line-value">
+                                    547366666
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    ИНН:
+                                </div>
+                                <div class="contacts__line-value">
+                                    547366666
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    ИНН:
+                                </div>
+                                <div class="contacts__line-value">
+                                    547366666
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    ИНН:
+                                </div>
+                                <div class="contacts__line-value">
+                                    547366666
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    ИНН:
+                                </div>
+                                <div class="contacts__line-value">
+                                    547366666
+                                </div>
+                            </div>
+                            <div class="contacts__line">
+                                <div class="contacts__line-title">
+                                    ИНН:
+                                </div>
+                                <div class="contacts__line-value">
+                                    547366666
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <iframe class="contacts__map"
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A6849000387034e296bf8ab432db76b6f3051cc5bfa4614063ddb38c55baa362f&amp;source=constructor"
+                    width="100%" height="460" frameborder="0"></iframe>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__block">
+                        <a href="/" class="logo">
+                            <span class="logo__text">Кабельные <span>лотки</span></span>
+                            <span class="header__date">
+                                Производство и продажа кабельных лотков и комплектующих с 2005 года
+                            </span>
+                        </a>
+                        <div @click="openPopupCalculator" class="footer__btn-calc btn-max"><img
+                                src="/assets/img/icon-calc.svg" alt="">
+                            Калькулятор</div>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__title">
+                            Продукция
+                        </div>
+                        <ul class="footer__nav-catalog">
+                            <li><a href="/archive.html">Лестничные лотки</a></li>
+                            <li><a href="/archive.html">Проволочные лотки</a></li>
+                            <li><a href="/archive.html">Перфорированные лотки</a></li>
+                            <li><a href="/archive.html">Неперфорированные лотки</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__title">
+                            Навигация
+                        </div>
+                        <ul class="footer__nav">
+                            <li><a href="/">Главная</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__title">
+                            График
+                        </div>
+                        <div class="footer__grafik">Понедельник - суббота
+                            08:00 - 19:00</div>
+                        <div class="footer__grafik">Воскресенье выходной</div>
+                    </div>
+                    <div class="footer__block">
+                        <div class="header__contacts">
+                            <a href="#" class="header__phone">8 977 583 73 62</a>
+                            <div @click="openPopupCallback" class="header__callback">Заказать звонок</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    Кабельные лотки © 2022. Все права защищены.
+                </div>
+            </div>
+        </footer>
+        <div class="popup" :class="{show: popupCallback}">
+            <div class="popup__content">
+                <div @click="openPopupCallback" class="popup__close">X</div>
+                <div class="popup__wrap">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cupiditate, quas itaque
+                    exercitationem possimus eum hic nostrum odit laboriosam sed eveniet nam sint quos tenetur esse,
+                    blanditiis ipsam a voluptate.
+                </div>
+            </div>
+        </div>
+        <div class="popup" :class="{show: popupCalculator}">
+            <div class="popup__content">
+                <div @click="openPopupCalculator" class="popup__close">X</div>
+                <div class="popup__wrap">
+                    Калькулятор<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cupiditate, quas itaque
+                    exercitationem possimus eum hic nostrum odit laboriosam sed eveniet nam sint quos tenetur esse,
+                    blanditiis ipsam a voluptate.
+                </div>
+            </div>
+        </div>
+        <div id="appColor">
+            <div style="background-color: #9d9d9d;" @click="setAppColor('#9d9d9d')"></div>
+            <div style="background-color: #ff003b;" @click="setAppColor('#ff003b')"></div>
+            <div style="background-color: #FDDA07;" @click="setAppColor('#FDDA07')"></div>
+            <div style="background-color: #007eff;" @click="setAppColor('#007eff')"></div>
+            <div style="background-color: #32c386;" @click="setAppColor('#32c386')"></div>
+            <div style="background-color: #cb8142;" @click="setAppColor('#cb8142')"></div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/assets/js/vue.js"></script>
+<script src="/assets/js/app.js"></script>
+
+</html>

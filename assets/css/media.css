@@ -66,7 +66,9 @@
     .banner-main .title {
         font-size: 22px;
     }
-
+    .contacts__title {
+        font-size: 22px;
+    }
     .products-category {
         grid-template-columns: 2fr 2fr;
         grid-template-areas  :
@@ -296,6 +298,21 @@
         grid-area: first;
     }
 
+    .contacts__row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas  :
+            "first first"
+            "two two";
+    }
+
+    .contacts__block:nth-child(1) {
+        grid-area: first;
+    }
+
+    .contacts__block:nth-child(2) {
+        grid-area: two;
+    }
+
 }
 
 
@@ -350,6 +367,10 @@
         grid-template-areas  :
             "."
         ;
+    }
+
+    .contacts__block:nth-child(2) .contacts__line {
+        flex-direction: column;
     }
 
     .footer__block {
